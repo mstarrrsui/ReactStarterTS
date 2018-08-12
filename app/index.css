@@ -1,0 +1,30 @@
+
+
+.nav-link.active {
+  font-weight: bolder;
+}
+
+
+
+.todolist {
+  margin-top: 40px;
+}
+
+.todoitems {
+  margin-top: 40px;
+}
+
+
+
+
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
