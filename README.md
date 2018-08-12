@@ -11,10 +11,13 @@ You can use `npm run build` to create a production build. For more build options
 
 ## Features of this starter
 
+* code splitting of vendor stuff into separate file
 * Includes Bootstrap 4 and Font Awesome
 * POSTCSS processing enabled with autoprefixer
 * Incorporates dev and production mode config settings
 * Hot Module Replacement is enable in dev config
+* ReactStrap for NavBar
+* Proper setup for Chrome Debugging within VS Code (with sourcemaps working properly)
 
 ### Faster Builds through use of fork-ts-checker-webpack-plugin
 
