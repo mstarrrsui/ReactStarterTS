@@ -1,40 +1,38 @@
-import * as React from "react";
+import * as React from 'react';
 
 import log from 'loglevel';
 import {
     BrowserRouter as Router,
     Route,
-    Switch
+    Switch,
 } from 'react-router-dom';
-import NavBar from './NavBar';
 import Home from './Home';
-
-
-
+import NavBar from './NavBar';
 
 export default class App extends React.Component  {
 
-    componentDidMount() {
+    public componentDidMount() {
         log.setDefaultLevel(3);
         log.setLevel(1, true);
-        log.debug("App Mounted");
+        log.debug('App Mounted');
     }
 
-    render() {
+    public render() {
         return (
             <Router>
-                <div className='container'>
+                <div className="container">
                     <NavBar />
                     <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route render={function() {
-                           return <p>Not Found</p>
-                        }} />
+                        <Route exact={true} path="/" component={Home} />
+                        <Route render={this.returnNotFound} />
                     </Switch>
                 </div>
             </Router>
         );
     }
 
-}
+    private returnNotFound = () => {
+        return <p>Not Found</p>;
+    }
 
+}

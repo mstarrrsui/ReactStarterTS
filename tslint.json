@@ -1,0 +1,19 @@
+{
+    "extends": [ 
+        "tslint:latest", 
+        "tslint-react"
+    ],
+    "defaultSeverity": "warning",
+    "linterOptions": {
+        "jsx-self-close": true,
+        "exclude": [
+            "webpack.config.js",
+            "node_modules/**/*.ts",
+            "dist/**"
+        ]
+    },
+    "rules": {
+        "quotemark": [true, "single", "jsx-double", "avoid-escape", "avoid-template"],
+        "prefer-object-spread": true
+    }
+ }
